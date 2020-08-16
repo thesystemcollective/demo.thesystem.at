@@ -1,0 +1,21 @@
+{
+  "name": "demo.thesystem.at",
+  "version": "0.0.1",
+  "description": "THESYSTEM augmented reality DEMO",
+  "private": true,
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "python3 -m http.server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thesystemcollective/demo.thesystem.at.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thesystemcollective/demo.thesystem.at/issues"
+  },
+  "homepage": "https://demo.thesystem.at"
+}
