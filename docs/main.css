@@ -521,13 +521,14 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	background: #fff;
 	background: rgba(255, 255, 255, 0.7);
 	margin: 0;
+	font-size: 9px;
 }
 .leaflet-control-attribution,
 .leaflet-control-scale-line {
 	padding: 0 5px;
 	color: #333;
 }
-.leaflet-container .leaflet-control-attribution,
+
 .leaflet-container .leaflet-control-scale {
 	font-size: 11px;
 }
@@ -643,36 +644,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	border-top: 1px solid #ddd;
 }
 
-.leaflet-oldie .leaflet-popup-content-wrapper {
-	zoom: 1;
-}
-.leaflet-oldie .leaflet-popup-tip {
-	width: 24px;
-	margin: 0 auto;
-
-	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)";
-	filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678);
-}
-
-.leaflet-oldie .leaflet-popup-tip-container {
-	margin-top: -1px;
-}
-
-.leaflet-oldie .leaflet-control-zoom,
-.leaflet-oldie .leaflet-control-layers,
-.leaflet-oldie .leaflet-popup-content-wrapper,
-.leaflet-oldie .leaflet-popup-tip {
-	border: 1px solid #999;
-}
-
-
 /* div icon */
-
 .leaflet-div-icon {
 	background: #fff;
 	border: 1px solid #666;
 }
-
 
 /* Tooltip */
 /* Base styles for the element that has a tooltip */
@@ -781,5 +757,3 @@ svg.leaflet-image-layer.leaflet-interactive path {
     stroke-width: 1;
   }
 }
-
-/*# sourceMappingURL=L.Control.Locate.css.map */
