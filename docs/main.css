@@ -6,8 +6,8 @@ body {
   font-size: 13px;
   line-height: 24px;
   overscroll-behavior: none;
-  height: 100%;
-  width: 100%;
+  height: calc(100vh + 1px);
+	width: 100%;
 }
 
 a {
