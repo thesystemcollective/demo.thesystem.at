@@ -3,43 +3,456 @@
 
 <head>
   <meta charset="utf-8">
-  <title>AR.THESYSTEM.AT</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <link type="text/css" rel="stylesheet" href="main.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Artificial Museum - TheSystem.at</title>
+  <meta name="description" value="TheSystemCollective is a syndicate of independent artists, 
+programmers, philosophers, activists, and scientists, 
+collectively using art and technology to transform our world.">
+
+  <link type="text/css" rel="stylesheet" href="/main.css">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="ar.thesystem.at">
+  <link rel="apple-touch-icon" href="/app-icon-192.jpg">
+  <meta name="theme-color" content="#000000">
 </head>
 
 <body>
   <header class="main">
-    <div class="logo">THESYSTEM AR DEMO</div>
+    <img class="logo" src="https://static.thesystem.at/logo.png" alt="THESYSTEM" title="THESYSTEM ARTIFICIAL MUSEUM">
 
     <nav class="right">
       <ul>
-        <li><a href="#artists">Artists</a></li>
-        <li><a href="#locations">Locations</a></li>
-      </ul>
+        <li class="nav open" data-to="info">Info</li>
+        <li><img class="nav exit" src="https://static.thesystem.at/button/map.svg" alt="Map"></li>
+        <li><img class="nav open" data-to="list" src="https://static.thesystem.at/button/list.svg" alt="List">
+      </li></ul>
     </nav>
   </header>
 
+  <noscript>
+  <div class="content">
+    <h3>Welcome to THESYSTEM.</h3>
+    <p>
+      This is an artificial museum.
+      It is a bridge from the analog to the digital world.
+    </p>
+
+    <p>Unfortunately, we also require javascript, which is either disabled or missing in your current browser.</p>
+
+    <p>
+      We promise to never track, analyze, or save any data about you.
+      <!-- see our <a href="/privacy/">Privacy Policy Notice</a>
+      for more information. -->
+    </p>
+  </div>
+</noscript>
+
   <div id="map-container"></div>
   <div id="three-container"></div>
-  <div id="page-container"></div>
 
   <footer class="main">
-    <nav class="left">
-      <ul>
-        <li><a href="#privacy">Privacy</a></li>
-        <li><a href="#team">Team</a></li>
-      </ul>
-    </nav>
-
     <nav class="right">
       <ul>
-        <li><a target="_blank" rel="noopener" href="https://koer.or.at">Commissioned by: K&ouml;r</a></li>
+        <li>
+          <a target="_blank" rel="noopener" href="https://koer.or.at/projekte/the-system/">
+            Commissioned by K&ouml;r
+          </a>
+        </li>
       </ul>
     </nav>
   </footer>
 
-  <script type="module" src="js/main.js"></script>
+  <div id="screen-container">
+    <div class="screen" data-name="info">
+  <h2>The <br> System</h2>
+  <h3>Artificial Museum</h3>
+
+  <div class="demo-disclaimer">
+    <h4>Early bird.</h4>
+    <p>You are here early. Welcome.</p>
+    <p>
+      This is a work-in-progress demonstration app, currently in private alpha state.
+      Some things might not work as expected (yet).
+      The official release of this artificial museum is planned for December 2020.
+    </p>
+  </div>
+
+  <div class="VideoEmbed">
+    <iframe allowfullscreen="" src="https://www.youtube-nocookie.com/embed/d-cfixGDwNQ" frameborder="0"></iframe>
+  </div>
+
+  <h4>Manifestation in the virtual World</h4>
+
+  <div class="manifest">
+    <p>
+      TheSystem - Artificial Museum is the connection between physical, digital, and imaginary worlds,
+      transforming analog art into digital experiences.
+    </p>
+    <p>
+      These "augmented" artworks form the foundation of an artificial museum,
+      allowing artists to bridge the chasm between their art
+      and the evolving digitized world around them.
+    </p>
+
+    <p>
+      The Museum is connected to the real world through the
+      web-based augmented reality application you are currently visiting,
+      we hope you will enjoy your stay.
+    </p>
+  </div>
+
+  <div class="collectives">
+    <p>Involved collectives</p>
+    <ul>
+      <li>Dachsbau</li>
+      <li>
+        <a href="https://www.facebook.com/sandkastensyndikat/" target="_blank" rel="noopener">
+          Sandkasten Syndikat
+        </a>
+      </li>
+      <li>
+        <a href="https://setzkastenwien.at/" target="_blank" rel="noopener">
+          Setzkasten Wien
+        </a>
+      </li>
+      <li>
+        <a href="http://mysoundofmusic.at" target="_blank" rel="noopener">
+          Zirkus Mops
+        </a>
+      </li>
+      <li>Villa Schapira</li>
+    </ul>
+  </div>
+
+  <div class="credits">
+    <ul>
+      <li>Concept: <a href="https://litto.work" target="_blank" rel="noopener">Litto / Daniela Weiss</a></li>
+      <li>Development: <a href="https://jaeh.at" target="_blank" rel="noopener">Jascha Ehrenreich</a></li>
+    </ul>
+  </div>
+
+  <div class="commissioned">
+    <p>Commissioned by:</p>
+    <a href="https://koer.or.at">
+      <img src="https://static.thesystem.at/support/koer.jpg" alt="Kunst im öffentlichen Raum Wien GmbH">
+      <img src="https://static.thesystem.at/support/wien-kultur.jpg" alt="Stadt Wien">
+    </a>
+  </div>
+</div>
+
+    <div class="screen" data-name="list">
+  
+    <div class="artist detail">
+      <div class="nav close" data-z="18" data-lat="48.21315" data-lng="16.3358">
+        <p class="title">
+          <img class="logo" src="https://static.thesystem.at/marker/object.png" role="presentation">
+          THESYSTEM
+        </p>
+
+        <h3>Hr. Litto</h3>
+      </div>
+
+      
+        <p>Litto / Daniela Weiss</p>
+      
+
+      <!-- <button class="nav close" data-z="18" data-lat="48.21315" data-lng="16.3358">
+        show on map
+      </button> -->
+      <button class="nav nogb" data-toggle="hrlitto">
+        <img class="arrow-down" src="https://static.thesystem.at/button/arrow-down.svg" alt="Show Details">
+        <img class="arrow-up" src="https://static.thesystem.at/button/arrow-up.svg" alt="Hide Details">
+      </button>
+
+      <div class="info hrlitto">
+        <img src="https://static.thesystem.at/object/hrlitto.jpg" role="presentation">
+
+        
+          <p>An AI, sourced from a drawing, tells us what it learned about material properties of the human body.</p>
+        
+
+        <p>
+          3D Visualization:
+          
+            
+              <span>litto</span>
+            
+        </p>
+
+        <p>
+          Photo:
+          
+            <a href="https://testing.com">testing</a>
+          </p>
+
+        <p>
+          Exhibition:
+          
+            <a href="https://thesystem.at">TheSystem</a>
+            Yppenplatz 5
+          </p>
+      </div>
+    </div>
+  
+    <div class="artist detail">
+      <div class="nav close" data-z="18" data-lat="48.18792" data-lng="16.40409">
+        <p class="title">
+          <img class="logo" src="https://static.thesystem.at/marker/object.png" role="presentation">
+          Vienna Contemporary
+        </p>
+
+        <h3>Systeme und Menschen</h3>
+      </div>
+
+      
+        <p>Stefan Stürzer</p>
+      
+
+      <!-- <button class="nav close" data-z="18" data-lat="48.18792" data-lng="16.40409">
+        show on map
+      </button> -->
+      <button class="nav nogb" data-toggle="systemeundmenschen">
+        <img class="arrow-down" src="https://static.thesystem.at/button/arrow-down.svg" alt="Show Details">
+        <img class="arrow-up" src="https://static.thesystem.at/button/arrow-up.svg" alt="Hide Details">
+      </button>
+
+      <div class="info systemeundmenschen">
+        <img src="https://static.thesystem.at/object/systemeundmenschen.jpg" role="presentation">
+
+        
+          <p>We live in a time that much too often has humans working purely for the maintainance of systems. Systems, invented by humans.</p>
+        
+          <p>Systems should be created by and for humans and not vice versa!</p>
+        
+          <p>A philosophical examination.</p>
+        
+
+        <p>
+          3D Visualization:
+          
+            
+              <span>litto</span>
+            
+        </p>
+
+        <p>
+          Photo:
+          
+            <a href="https://testing.com">testing</a>
+          </p>
+
+        <p>
+          Exhibition:
+          
+            <a href="https://thesystem.at">TheSystem</a>
+            Yppenplatz 5
+          </p>
+      </div>
+    </div>
+  
+    <div class="artist detail">
+      <div class="nav close" data-z="18" data-lat="48.23638" data-lng="16.33122">
+        <p class="title">
+          <img class="logo" src="https://static.thesystem.at/marker/object.png" role="presentation">
+          Villa Schapira
+        </p>
+
+        <h3>Max Mustermann</h3>
+      </div>
+
+      
+        <p>Noemi Kiss</p>
+      
+
+      <!-- <button class="nav close" data-z="18" data-lat="48.23638" data-lng="16.33122">
+        show on map
+      </button> -->
+      <button class="nav nogb" data-toggle="maxmustermann">
+        <img class="arrow-down" src="https://static.thesystem.at/button/arrow-down.svg" alt="Show Details">
+        <img class="arrow-up" src="https://static.thesystem.at/button/arrow-up.svg" alt="Hide Details">
+      </button>
+
+      <div class="info maxmustermann">
+        <img src="https://static.thesystem.at/object/maxmustermann.jpg" role="presentation">
+
+        
+          <p>&quot;Ez a világ olyan világ, sokat igér, keveset ád…“ (&quot;Was für eine Welt ist diese Welt, die viel verspricht und wenig hält…“)</p>
+        
+
+        <p>
+          3D Visualization:
+          
+            
+              <span>litto</span>
+            
+        </p>
+
+        <p>
+          Photo:
+          
+            <a href="https://testing.com">testing</a>
+          </p>
+
+        <p>
+          Exhibition:
+          
+            <a href="https://thesystem.at">TheSystem</a>
+            Yppenplatz 5
+          </p>
+      </div>
+    </div>
+  
+    <div class="artist detail">
+      <div class="nav close" data-z="18" data-lat="48.2049" data-lng="16.3935">
+        <p class="title">
+          <img class="logo" src="https://static.thesystem.at/logo/koer.png" role="presentation">
+          Kunst im öffentlichen Raum GmbH
+        </p>
+
+        <h3>Heartbreakhotel</h3>
+      </div>
+
+      
+        <p>Dagmar Rohm</p>
+      
+
+      <!-- <button class="nav close" data-z="18" data-lat="48.2049" data-lng="16.3935">
+        show on map
+      </button> -->
+      <button class="nav nogb" data-toggle="heartbreakhotel">
+        <img class="arrow-down" src="https://static.thesystem.at/button/arrow-down.svg" alt="Show Details">
+        <img class="arrow-up" src="https://static.thesystem.at/button/arrow-up.svg" alt="Hide Details">
+      </button>
+
+      <div class="info heartbreakhotel">
+        <img src="https://static.thesystem.at/object/heartbreakhotel.jpg" role="presentation">
+
+        
+          <p>Series framing my work for de-colonialism. Looking after historical perspectives is looking for unfairness. This work examines the beginning of Rock‘n Roll, which stole the rhythm of Black music and turned it into a business.</p>
+        
+
+        <p>
+          3D Visualization:
+          
+            
+              <span>litto</span>
+            
+        </p>
+
+        <p>
+          Photo:
+          
+            <a href="https://testing.com">testing</a>
+          </p>
+
+        <p>
+          Exhibition:
+          
+            <a href="https://thesystem.at">TheSystem</a>
+            Yppenplatz 5
+          </p>
+      </div>
+    </div>
+  
+    <div class="artist detail">
+      <div class="nav close" data-z="18" data-lat="48.2316" data-lng="16.4124">
+        <p class="title">
+          <img class="logo" src="https://static.thesystem.at/logo/usus.png" role="presentation">
+          Usus am Wasser
+        </p>
+
+        <h3>Arrival</h3>
+      </div>
+
+      
+        <p>Litto / Daniela Weiss</p>
+      
+
+      <!-- <button class="nav close" data-z="18" data-lat="48.2316" data-lng="16.4124">
+        show on map
+      </button> -->
+      <button class="nav nogb" data-toggle="arrival">
+        <img class="arrow-down" src="https://static.thesystem.at/button/arrow-down.svg" alt="Show Details">
+        <img class="arrow-up" src="https://static.thesystem.at/button/arrow-up.svg" alt="Hide Details">
+      </button>
+
+      <div class="info arrival">
+        <img src="https://static.thesystem.at/object/arrival.jpg" role="presentation">
+
+        
+          <p>I. HAVE. ARRIVED.</p>
+        
+
+        <p>
+          3D Visualization:
+          
+            
+              <span>litto</span>
+            
+        </p>
+
+        <p>
+          Photo:
+          
+            <a href="https://testing.com">testing</a>
+          </p>
+
+        <p>
+          Exhibition:
+          
+            <a href="https://thesystem.at">TheSystem</a>
+            Yppenplatz 5
+          </p>
+      </div>
+    </div>
+  
+</div>
+
+    <div class="screen" data-name="privacy">
+  <h3>THESYSTEM Privacy Notice.</h3>
+
+  <p>We promise to never track, analyze, or save any data about you on a computer that you do not control.</p>
+
+  <h3>Local Visual data</h3>
+  <p>
+    All browser features that collect data
+    (device orientation, 3d-map of your surroundings, camera video streams)
+    DO NOT and NEVER WILL transmit this data.
+  </p>
+
+  <h3>Gelocation</h3>
+  <p>The geolocation information we collect never gets transmitted anywhere.</p>
+
+  <h3>Session storage</h3>
+  <p>
+    We save some data in your browser
+    (your current location and which page you opened),
+    those get deleted as soon as you close the browser tab.
+  </p>
+
+  <h3>Hosting provider</h3>
+  <p>
+    At the moment,
+    this homepage is hosted on <a href="https://github.com/">github</a>,
+    who promise that they do not track users using unique identifiers either.
+    For more information, please refer to the <a href="https://github.com/">github privacy disclaimer</a>
+  </p>
+
+  <h3>Correlation</h3>
+  <p>We never correlate the images or objects you view.</p>
+</div>
+  </div>
+
+  <div id="three-gui">
+    <button id="exit-button">
+      <img src="https://static.thesystem.at/button/exit.svg" alt="Exit" title="Exit Experience">
+    </button>
+  </div>
+
+  <script type="module" src="/main.js"></script>
 </body>
 
 </html>
