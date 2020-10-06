@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "start": "npm run dev",
-    "dev": "python3 -m http.server --directory docs"
+    "dev": "grundstein-server --dir ./docs --port 8000 --cors '*'"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/thesystemcollective/demo.thesystem.at/issues"
   },
-  "homepage": "https://demo.thesystem.at"
+  "homepage": "https://demo.thesystem.at",
+  "devDependencies": {
+    "@grundstein/gss": "github:grundstein/gss"
+  }
 }
