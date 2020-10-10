@@ -1,7 +1,7 @@
 {
   "name": "demo.thesystem.at",
   "version": "0.0.1",
-  "description": "THESYSTEM augmented reality DEMO",
+  "description": "THESYSTEM augmented reality production DEMO",
   "private": true,
   "scripts": {
     "start": "npm run dev",
